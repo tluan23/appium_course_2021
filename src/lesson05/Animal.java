@@ -1,20 +1,20 @@
 package lesson05;
 
-import java.util.Scanner;
+import java.security.SecureRandom;
 
-public class test {
-    public static void main(String[] args) {
-        System.out.println("Input your Book ID");
-        Scanner scanner = new Scanner(System.in);
-        String iSBN = scanner.next();
 
-        System.out.println("Input your Year");
-        String bookYear = scanner.next();
+public class Animal {
+    public Animal() {
+    }
 
-        System.out.println("Input your Book Title");
-        String bookTitle = scanner.next();
+    public static int randomSpeed(int maxSpeed){
+        int randomSpeed = new SecureRandom().nextInt(maxSpeed);
+        return randomSpeed;
+    }
 
-        System.out.println("Input your Book Author");
-        String bookAuthor = scanner.next();
+    public int getSpeed() {
+        return 0;
+    }
+    public void setSpeed(int speed) {
     }
 }
