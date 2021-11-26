@@ -1,10 +1,10 @@
 package lesson06;
 
 public class Book {
-    private String iSBN = "";
-    private String title = "";
-    private String author = "";
-    private int year = 0;
+    private final String iSBN;
+    private final String title;
+    private final String author;
+    private final int year;
 
     public Book(String ISBN, String title, String author, int year) {
         this.iSBN = ISBN;
@@ -13,7 +13,7 @@ public class Book {
         this.year = year;
     }
 
-    public String getiSBN() {
+    public String getISBN() {
         return iSBN;
     }
 

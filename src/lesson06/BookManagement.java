@@ -59,9 +59,9 @@ public class BookManagement {
         System.out.println("input book ID");
         String searchBookID = scanner.nextLine();
         for (Book book : bookLibrary) {
-            if (book.getiSBN().equals(searchBookID)) {
+            if (book.getISBN().equals(searchBookID)) {
                 System.out.println("Book info:");
-                System.out.println("Book ID: " + book.getiSBN());
+                System.out.println("Book ID: " + book.getISBN());
                 System.out.println("Book Title: " +book.getTitle());
                 System.out.println("Book Author: " +book.getAuthor());
                 System.out.println("Book Year: " +book.getYear());
