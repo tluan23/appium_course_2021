@@ -37,10 +37,10 @@ public class BookManagement {
     private static void addBook(List<Book> bookLibrary) {
         Scanner scanner = new Scanner(System.in);
 
-        String bookID = "";
-        String bookTitle = "";
-        String bookAuthor ="";
-        int year = 0;
+        String bookID;
+        String bookTitle;
+        String bookAuthor;
+        int year;
         System.out.println("Input ID");
         bookID = scanner.nextLine();
         System.out.println("Input title");
@@ -56,7 +56,7 @@ public class BookManagement {
     private static void retrieveBook(List<Book> bookLibrary) {
         Scanner scanner = new Scanner(System.in);
         boolean isBookExist = false;
-        System.out.println("input book ID");
+        System.out.println("Input book ID");
         String searchBookID = scanner.nextLine();
         for (Book book : bookLibrary) {
             if (book.getISBN().equals(searchBookID)) {
